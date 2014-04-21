@@ -3,7 +3,7 @@ package controller;
 import model.Matriz;
 
 public class SelectionSort {
-	static Matriz matriz = new Matriz();
+	static Matriz matrizSelect = new Matriz();
 	int menor;
 	int indiceMenor;
 	int comparacao = 0;
@@ -15,7 +15,7 @@ public class SelectionSort {
 
             for (int j = i + 1; j < tabela.length; j++){
 				comparacao++;
-				matriz.setComparacao(comparacao);
+				matrizSelect.setComparacao(comparacao);
                 if (tabela[j] < menor){
                     menor = tabela[j];
                     indiceMenor = j;
@@ -25,4 +25,10 @@ public class SelectionSort {
             tabela[i] = menor;
         }
 	}
+	
+	public void iniciaMatrizSelect(){
+		int [] numeros = new int[]{1, 7, 5, 12, 4, 2, 9, 11, 3, 8, 6, 0, 10};
+		matrizSelect.setMatriz(numeros);
+	}
 }
+

@@ -3,7 +3,7 @@ package controller;
 import model.Matriz;
 
 public class HeapSort {
-	static Matriz matriz = new Matriz();
+	static Matriz matrizHeap = new Matriz();
 	static int comparacao = 0;
 	
 	public void heapSort(int tabela[]) {  
@@ -20,7 +20,7 @@ public class HeapSort {
 		for (int i = tabela.length / 2 - 1; i >= 0; i--)  
 			maxHeapify(tabela, i, tabela.length); 
 			comparacao++;
-			matriz.setComparacao(comparacao);
+			matrizHeap.setComparacao(comparacao);
 	}  
 
 	public static void maxHeapify(int tabela[], int posicao, int n) {  
@@ -32,7 +32,7 @@ public class HeapSort {
 				swap(tabela, max, posicao);  
 				maxHeapify(tabela, max, n); 
 				comparacao++;
-				matriz.setComparacao(comparacao);
+				matrizHeap.setComparacao(comparacao);
 				
 			}  
 		}  
@@ -44,6 +44,11 @@ public class HeapSort {
 		tabela[antes] = tabela[apos];  
 		tabela[apos] = aux; 
 		comparacao++;
-		matriz.setComparacao(comparacao);
+		matrizHeap.setComparacao(comparacao);
 	}  
+	
+	public void iniciaMatrizHeap(){
+		int [] numeros = new int[]{1, 7, 5, 12, 4, 2, 9, 11, 3, 8, 6, 0, 10};
+		matrizHeap.setMatriz(numeros);
+	}
 }

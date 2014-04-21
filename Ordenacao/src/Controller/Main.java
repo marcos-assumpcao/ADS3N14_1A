@@ -9,27 +9,28 @@ public class Main {
 		ViewSelection imprimeSelection = new ViewSelection();
 		HeapSort heapSort = new HeapSort();
 		SelectionSort selectionSort = new SelectionSort();
-		
-		int [] numerosHeap = new int[]{1, 7, 5, 12, 4, 2, 9, 11, 3, 8, 6, 0, 10};
-		int [] numerosSelection = new int[]{1, 7, 5, 12, 4, 2, 9, 11, 3, 8, 6, 0, 10};
+
 		//HeapSort
-		System.out.println("Heap Sort");
+		System.out.println("--------- Heap Sort ---------");
 		System.out.println("Antes da ordenacao:");
-		imprimeHeap.ImprimeInfo(numerosHeap);
+		heapSort.iniciaMatrizHeap();
+		imprimeHeap.ImprimeInfo(HeapSort.matrizHeap.getMatriz());
 
 		System.out.println("\n\nDepois da ordenacao:");
-		heapSort.heapSort(numerosHeap);
-		imprimeHeap.ImprimeInfo(numerosHeap);
-		imprimeHeap.ImprimeComp(HeapSort.matriz.getComparacao());
+		heapSort.heapSort(HeapSort.matrizHeap.getMatriz());
+		imprimeHeap.ImprimeInfo(HeapSort.matrizHeap.getMatriz());
+		imprimeHeap.ImprimeComp(HeapSort.matrizHeap.getComparacao());
 		
 		//SelectionSort
-		System.out.println("\nSelection Sort");
+		System.out.println("\n------ Selection Sort -------");
 		System.out.println("Antes da ordenacao:");
-		imprimeSelection.ImprimeInfo(numerosSelection);
+		selectionSort.iniciaMatrizSelect();
+		imprimeSelection.ImprimeInfo(SelectionSort.matrizSelect.getMatriz());
 
 		System.out.println("\n\nDepois da ordenacao:");
-		selectionSort.selectionSort(numerosSelection);
-		imprimeSelection.ImprimeInfo(numerosSelection);
-		imprimeSelection.ImprimeComp(SelectionSort.matriz.getComparacao());
+		selectionSort.selectionSort(SelectionSort.matrizSelect.getMatriz());
+		imprimeSelection.ImprimeInfo(SelectionSort.matrizSelect.getMatriz());
+		imprimeSelection.ImprimeComp(SelectionSort.matrizSelect.getComparacao());
+
 	}
 }

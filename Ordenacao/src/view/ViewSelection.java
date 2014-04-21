@@ -1,9 +1,6 @@
 package view;
 
-import model.Matriz;
-
 public class ViewSelection {
-	Matriz matriz = new Matriz();
 	public void ImprimeInfo(int[] numeros){ 
 		for (int n : numeros){  
 			System.out.print(" " + n);	//

@@ -1,9 +1,6 @@
 package view;
 
-import model.Matriz;
-
-public class ViewHeap {
-	Matriz matriz = new Matriz();
+public class ViewHeap {	
 	public void ImprimeInfo(int[] numeros){ 
 		for (int n : numeros){  
 			System.out.print(" " + n);	//
