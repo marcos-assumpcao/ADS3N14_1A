@@ -1,5 +1,8 @@
 package view;
-
+/**
+ * @author Marcos Assumpcao
+ *
+ */
 public class View {	
 	public void ImprimeInfo(int[] numeros){ 
 		for (int n : numeros){  
