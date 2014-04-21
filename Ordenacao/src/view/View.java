@@ -1,6 +1,6 @@
 package view;
 
-public class ViewHeap {	
+public class View {	
 	public void ImprimeInfo(int[] numeros){ 
 		for (int n : numeros){  
 			System.out.print(" " + n);	//
