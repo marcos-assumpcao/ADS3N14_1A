@@ -2,7 +2,7 @@ package view;
 
 import model.Matriz;
 
-public class View {
+public class ViewHeap {
 	Matriz matriz = new Matriz();
 	public void ImprimeInfo(int[] numeros){ 
 		for (int n : numeros){  

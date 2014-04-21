@@ -1,10 +1,10 @@
 package controller;
 
-import view.View;
+import view.ViewHeap;
 
 public class Main {
 	public static void main(String[] args){
-		View imprime = new View();
+		ViewHeap imprime = new ViewHeap();
 		HeapSort heapSort = new HeapSort();
 		SelectionSort selectionSort = new SelectionSort();
 		int [] numeros = new int[]{1, 7, 5, 12, 4, 2, 9, 11, 3, 8, 6, 0, 10}; 
