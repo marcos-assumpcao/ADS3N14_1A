@@ -3,7 +3,7 @@ package controller;
 import model.Matriz;
 
 public class SelectionSort {
-	Matriz matriz = new Matriz();
+	static Matriz matriz = new Matriz();
 	int menor;
 	int indiceMenor;
 	int comparacao = 0;
