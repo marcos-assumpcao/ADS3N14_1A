@@ -1,6 +1,6 @@
-package Controller;
+package controller;
 
-import Model.Matriz;
+import model.Matriz;
 
 public class HeapSort {
 	static Matriz matriz = new Matriz();

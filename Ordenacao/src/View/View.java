@@ -1,6 +1,6 @@
-package View;
+package view;
 
-import Model.Matriz;
+import model.Matriz;
 
 public class View {
 	Matriz matriz = new Matriz();

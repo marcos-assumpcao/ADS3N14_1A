@@ -1,6 +1,6 @@
-package Controller;
+package controller;
 
-import View.View;
+import view.View;
 
 public class Main {
 	public static void main(String[] args){
