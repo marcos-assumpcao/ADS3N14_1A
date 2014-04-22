@@ -16,23 +16,23 @@ public class Main {
 		System.out.println("--------- Heap Sort ---------");
 		System.out.println("Antes da ordenacao:");
 		heapSort.iniciaMatrizHeap();
-		imprime.ImprimeInfo(HeapSort.matrizHeap.getMatriz());
+		imprime.ImprimeInfo(HeapSort.vetorHeap.getMatriz());
 
 		System.out.println("\n\nDepois da ordenacao:");
-		heapSort.heapSort(HeapSort.matrizHeap.getMatriz());
-		imprime.ImprimeInfo(HeapSort.matrizHeap.getMatriz());
-		imprime.ImprimeComp(HeapSort.matrizHeap.getComparacao());
+		heapSort.heapSort(HeapSort.vetorHeap.getMatriz());
+		imprime.ImprimeInfo(HeapSort.vetorHeap.getMatriz());
+		imprime.ImprimeComp(HeapSort.vetorHeap.getComparacao());
 		
 		//SelectionSort
 		System.out.println("\n------ Selection Sort -------");
 		System.out.println("Antes da ordenacao:");
 		selectionSort.iniciaMatrizSelect();
-		imprime.ImprimeInfo(SelectionSort.matrizSelect.getMatriz());
+		imprime.ImprimeInfo(SelectionSort.vetorSelect.getMatriz());
 
 		System.out.println("\n\nDepois da ordenacao:");
-		selectionSort.selectionSort(SelectionSort.matrizSelect.getMatriz());
-		imprime.ImprimeInfo(SelectionSort.matrizSelect.getMatriz());
-		imprime.ImprimeComp(SelectionSort.matrizSelect.getComparacao());
+		selectionSort.selectionSort(SelectionSort.vetorSelect.getMatriz());
+		imprime.ImprimeInfo(SelectionSort.vetorSelect.getMatriz());
+		imprime.ImprimeComp(SelectionSort.vetorSelect.getComparacao());
 
 	}
 }

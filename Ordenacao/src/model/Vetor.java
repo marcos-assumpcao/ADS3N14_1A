@@ -4,7 +4,7 @@ package model;
  * @author Marcos Assumpcao
  *
  */
-public class Matriz {
+public class Vetor {
 	private int[] matriz;
 	private int comparacao;
 	

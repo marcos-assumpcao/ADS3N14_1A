@@ -1,13 +1,13 @@
 package controller;
 
-import model.Matriz;
+import model.Vetor;
 
 /**
  * @author Marcos Assumpcao
  *
  */
 public class HeapSort {
-	static Matriz matrizHeap = new Matriz();
+	static Vetor vetorHeap = new Vetor();
 	static int comparacao = 0;
 	
 	public void heapSort(int tabela[]) {  
@@ -24,7 +24,7 @@ public class HeapSort {
 		for (int i = tabela.length / 2 - 1; i >= 0; i--)  
 			maxHeapify(tabela, i, tabela.length); 
 			comparacao++;
-			matrizHeap.setComparacao(comparacao);
+			vetorHeap.setComparacao(comparacao);
 	}  
 
 	public static void maxHeapify(int tabela[], int posicao, int n) {  
@@ -36,7 +36,7 @@ public class HeapSort {
 				swap(tabela, max, posicao);  
 				maxHeapify(tabela, max, n); 
 				comparacao++;
-				matrizHeap.setComparacao(comparacao);
+				vetorHeap.setComparacao(comparacao);
 				
 			}  
 		}  
@@ -48,11 +48,11 @@ public class HeapSort {
 		tabela[antes] = tabela[apos];  
 		tabela[apos] = aux; 
 		comparacao++;
-		matrizHeap.setComparacao(comparacao);
+		vetorHeap.setComparacao(comparacao);
 	}  
 	
 	public void iniciaMatrizHeap(){
 		int [] numeros = new int[]{1, 7, 5, 12, 4, 2, 9, 11, 3, 8, 6, 0, 10};
-		matrizHeap.setMatriz(numeros);
+		vetorHeap.setMatriz(numeros);
 	}
 }

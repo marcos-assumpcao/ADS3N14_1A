@@ -1,13 +1,13 @@
 package controller;
 
-import model.Matriz;
+import model.Vetor;
 
 /**
  * @author Marcos Assumpcao
  *
  */
 public class SelectionSort {
-	static Matriz matrizSelect = new Matriz();
+	static Vetor vetorSelect = new Vetor();
 	int menor;
 	int indiceMenor;
 	int comparacao = 0;
@@ -19,7 +19,7 @@ public class SelectionSort {
 
             for (int j = i + 1; j < tabela.length; j++){
 				comparacao++;
-				matrizSelect.setComparacao(comparacao);
+				vetorSelect.setComparacao(comparacao);
                 if (tabela[j] < menor){
                     menor = tabela[j];
                     indiceMenor = j;
@@ -32,6 +32,6 @@ public class SelectionSort {
 	
 	public void iniciaMatrizSelect(){
 		int [] numeros = new int[]{1, 7, 5, 12, 4, 2, 9, 11, 3, 8, 6, 0, 10};
-		matrizSelect.setMatriz(numeros);
+		vetorSelect.setMatriz(numeros);
 	}
 }
