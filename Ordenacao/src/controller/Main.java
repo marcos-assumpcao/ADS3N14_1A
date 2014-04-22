@@ -4,6 +4,8 @@ import view.View;
 
 /**
  * @author Marcos Assumpcao
+ * Faculdade Senac Porto Alegre
+ * Algoritmos e Programacao 3
  *
  */
 public class Main {
@@ -15,23 +17,23 @@ public class Main {
 		//HeapSort
 		System.out.println("--------- Heap Sort ---------");
 		System.out.println("Antes da ordenacao:");
-		heapSort.iniciaMatrizHeap();
-		imprime.ImprimeInfo(HeapSort.vetorHeap.getMatriz());
+		heapSort.iniciaVetorHeap();
+		imprime.ImprimeInfo(HeapSort.vetorHeap.getVetor());
 
 		System.out.println("\n\nDepois da ordenacao:");
-		heapSort.heapSort(HeapSort.vetorHeap.getMatriz());
-		imprime.ImprimeInfo(HeapSort.vetorHeap.getMatriz());
+		heapSort.heapSort(HeapSort.vetorHeap.getVetor());
+		imprime.ImprimeInfo(HeapSort.vetorHeap.getVetor());
 		imprime.ImprimeComp(HeapSort.vetorHeap.getComparacao());
 		
 		//SelectionSort
 		System.out.println("\n------ Selection Sort -------");
 		System.out.println("Antes da ordenacao:");
-		selectionSort.iniciaMatrizSelect();
-		imprime.ImprimeInfo(SelectionSort.vetorSelect.getMatriz());
+		selectionSort.iniciaVetorSelect();
+		imprime.ImprimeInfo(SelectionSort.vetorSelect.getVetor());
 
 		System.out.println("\n\nDepois da ordenacao:");
-		selectionSort.selectionSort(SelectionSort.vetorSelect.getMatriz());
-		imprime.ImprimeInfo(SelectionSort.vetorSelect.getMatriz());
+		selectionSort.selectionSort(SelectionSort.vetorSelect.getVetor());
+		imprime.ImprimeInfo(SelectionSort.vetorSelect.getVetor());
 		imprime.ImprimeComp(SelectionSort.vetorSelect.getComparacao());
 
 	}
